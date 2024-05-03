@@ -2,6 +2,30 @@ import * as THREE from 'three';
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js"
 import { createRenderer, createCamera, createSky, createControls, createWater } from './landscape';
 
+let state = {
+  orientation: 0,
+  position: 0,
+  speed: 0,
+}
+
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === "ArrowUp") {
+    if (state.speed > 1) return
+    state.speed += 0.1
+  }
+  if (event.key === "ArrowDown") {
+    if (state.speed < -1) return
+    state.speed += -0.1
+  }
+  if (event.key === "ArrowRight") {
+    state.orientation += -0.1
+  }
+  if (event.key === "ArrowLeft") {
+    state.orientation += 0.1
+  }
+})
+
 
 async function main() {
   const app = document.getElementById("app")
@@ -35,6 +59,13 @@ async function main() {
 
   function animate() {
     requestAnimationFrame(animate);
+    const speed = state.speed
+    const orientation = state.orientation
+    const position = state.position
+    toyota.position.x += Math.sin(orientation) * speed
+    toyota.position.z += Math.cos(orientation) * speed
+    toyota.rotation.y = orientation
+
     renderer.render(scene, camera);
   }
 }
