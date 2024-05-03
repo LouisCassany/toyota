@@ -1,0 +1,11 @@
+Model Information:
+* title:	Toyota Celica ST205 GT4
+* source:	https://sketchfab.com/3d-models/toyota-celica-st205-gt4-af4fec1626f047339857d98b4f0f7273
+* author:	Rtag63 (https://sketchfab.com/Rtag63)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Toyota Celica ST205 GT4" (https://sketchfab.com/3d-models/toyota-celica-st205-gt4-af4fec1626f047339857d98b4f0f7273) by Rtag63 (https://sketchfab.com/Rtag63) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
